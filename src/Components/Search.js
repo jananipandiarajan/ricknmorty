@@ -45,9 +45,7 @@ class Search extends React.Component {
           
           <ul className="grid"> 
 
-          {
-          
-           this.state.items.map(item => {
+          {this.state.items && this.state.items.map(item => {
               return (
                 <section className="card">
                  <li key={item.id} >
